@@ -63,7 +63,7 @@ control MyIngress(inout headers hdr,
     }
 
     // If destination adress is matched, update destination address
-    // and forward to specific port (for demonstration purpose only)
+    // and forward to specific port (for study purpose only)
     action l2_forward(macAddr_t dstAddr, egressSpec_t port) {
         log_msg("[Debug]: Update MAC addr"); 
         standard_metadata.egress_spec = port;
