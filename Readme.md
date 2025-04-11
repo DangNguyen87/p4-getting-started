@@ -3,7 +3,8 @@ This repository is simple environment for p4 study.
 The source files are created with reference to [p4-guide](https://github.com/jafingerhut/p4-guide).
 
 ## Prerequisite
-P4 development tools must be installed to compile and execute p4 application on bmv2 switch simulator. Use this [script](https://github.com/jafingerhut/p4-guide/blob/master/bin/install-p4dev-v8.sh) to intall p4 development tools if it is not available on your machine.
+* [P4 development tools](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md) for compiling and executing p4 application on switch simulator.
+* [scapy](https://scapy.readthedocs.io/en/latest/installation.html) for sending and sniffing package.
 
 ## Source Files Explaination 
 * **demo.p4**: Very simple p4 application that match MAC destination address then update MAC address and forward to egress port (for study purpose only).
