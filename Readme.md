@@ -6,6 +6,11 @@ The source files are created with reference to [p4-guide](https://github.com/jaf
 * [P4 development tools](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md) for compiling and executing p4 application on switch simulator.
 * [scapy](https://scapy.readthedocs.io/en/latest/installation.html) for sending and sniffing package.
 
+Note: Use command below to install scapy development packet on Ubuntu machine.
+```
+sudo apt-get install python3-scapy
+```
+
 ## Source Files Explaination 
 * **demo.p4**: Very simple p4 application that match MAC destination address then update MAC address and forward to egress port (for study purpose only).
 * **control_plan.py**: A script to load p4 application into simulator and set table data with P4Runtime shell.
